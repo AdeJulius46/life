@@ -36,7 +36,7 @@ const Sidebar = ({ isSideBarOpen, setIsSideBarOpen }) => {
    function handletoggle(){
       setIsSideBarOpen(prev => !prev)
    }
-   
+
    const handleBackdropClose = () => {
       setIsSideBarOpen(!isSideBarOpen);
    };
@@ -69,11 +69,11 @@ const Sidebar = ({ isSideBarOpen, setIsSideBarOpen }) => {
          </nav>
 
          Backdrop
-         <Backdrop
+         {/* <Backdrop
             open={isSideBarOpen}
             onClick={handleBackdropClose}
             sx={{ zIndex: '10' }}
-            />
+            /> */}
       </>
    );
 };
