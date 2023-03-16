@@ -68,7 +68,6 @@ const Sidebar = ({ isSideBarOpen, setIsSideBarOpen }) => {
             </ul>
          </nav>
 
-         Backdrop
          {/* <Backdrop
             open={isSideBarOpen}
             onClick={handleBackdropClose}
