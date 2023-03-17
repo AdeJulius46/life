@@ -56,7 +56,7 @@ const Sidebar = ({ isSideBarOpen, setIsSideBarOpen }) => {
 
             <ul className='space-y-4 lg:space-y-4 mt-10 lg:mt-16'>
             <NavItem icon={<SVG.Home />} label={`${isSideBarOpen ? "":"Home"}`}  link='/dashboard' />
-               <NavItem icon={<SVG.Users />} label={`${isSideBarOpen ? "":"Users"}`} />
+               <NavItem icon={<SVG.Users />} label={`${isSideBarOpen ? "":"Users"}`} link='/users' />
                <NavItem icon={<SVG.Products />} label={`${isSideBarOpen ? "":"Product"}`} />
                {/* <NavItem icon={<SVG.Transactions />} label='Transactions' /> */}
                <NavItem icon={<SVG.Adminstrators />} label={`${isSideBarOpen? "":"Administrators"}`} />
