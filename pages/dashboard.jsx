@@ -1,7 +1,6 @@
 import { Chip, Button, IconButton } from '@mui/material';
 import { Layout, SVG, VerticalChart, DonutChart } from '../components';
 import CurrencyFormat from 'react-currency-format';
-
 export default function Home() {
    // ChipComponent
    const ChipComponent = ({ label }) => {
@@ -55,11 +54,11 @@ export default function Home() {
 
                <Button
                   startIcon={<SVG.Refresh />}
-                  className='text-white normal-case bg-orange chip hidden lg:inline-block'
+                  className='text-white normal-case hover chip hidden lg:inline-block'
                >
                   Refresh
                </Button>
-               <IconButton className='bg-orange chip lg:hidden'>
+               <IconButton className='bg-orange  lg:hidden'>
                   <SVG.Refresh />
                </IconButton>
             </div>
@@ -70,16 +69,16 @@ export default function Home() {
             <div className='gap-3 xl:gap-[18px] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4'>
                <MetricComponent
                   value='200000'
-                  label='Total Balance'
+                  label='Amount in Bank'
                   isCurrency
                />
                <MetricComponent
                   value='2000000'
-                  label='Total Transaction'
+                  label='All Transactions'
                   isCurrency
                />
-               <MetricComponent value='120' label='Total Users' isUser />
-               <MetricComponent value='20' label='Total Investments' />
+               <MetricComponent value='120' label='Total Bill Payment' isUser />
+               <MetricComponent value='20' label='Total Users' />
             </div>
          </section>
 

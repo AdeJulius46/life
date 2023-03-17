@@ -72,6 +72,14 @@ html {
    background: #FBA281 !important;
 }
 
+.hover{
+   color: black;
+}
+.hover:hover{
+  background-color: orangered; 
+  color: white
+}
+
 @layer utilities {
     /* Rows */
     .inline-start {
